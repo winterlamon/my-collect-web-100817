@@ -6,7 +6,7 @@ def my_collect(collection)
   end
 end
 
-new_collection = []
+
 my_collect(collection) do |element|
-  new_collection << element.split(" ").first
+  element.split(" ").first
 end
