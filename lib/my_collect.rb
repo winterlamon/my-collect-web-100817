@@ -8,6 +8,6 @@ def my_collect(collection)
 end
 
 
-#my_collect(collection) do |element|
-#  element.split(" ").first
-#end
+my_collect(collection) do |element|
+  element.split(" ").first
+end
