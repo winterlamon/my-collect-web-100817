@@ -1,13 +1,10 @@
 def my_collect(collection)
-  collection = []
+  new_collection = []
   i = 0
   while i < collection.length
-    yield collection[i]
+    yield collection[i])
+    new_collection << yield collection[i]
     i += 1
   end
-end
-
-collection = []
-my_collect(collection) do |element|
-  element.split(" ").first
+  new_collection
 end
