@@ -6,6 +6,7 @@ def my_collect(collection)
   end
 end
 
+collection = []
 my_collect(collection) do |element|
   element.split(" ").first
 end
